@@ -31,6 +31,7 @@ const switchMenu = (menuSelected, onOpenChat) => {
     if (menuSelected === MENU.ALL) {
         return (
             <FlatList
+            overScrollMode="never"
                 data={users}
                 renderItem={({ item }) => {
                     return (
@@ -49,6 +50,7 @@ const switchMenu = (menuSelected, onOpenChat) => {
     } else if (menuSelected === MENU.FAMILY) {
         return (
             <FlatList
+            overScrollMode="never"
             data={usersFamily}
             renderItem={({ item }) => {
                 return (
